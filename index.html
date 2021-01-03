@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>VLSM Calculator</title>
+    <meta name="description" content="Easy but powerful CIDR/VLSM calculator for finding IP addresses, number of hosts, network masks, usable range, etc. Plan a whole network using this one tool " />
+    <meta name="keywords" content="VLSM, CIDR, Calculator, subnet, variable-length, mask, calculate, plan, network, slash" />
+
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        input{width:8em;
+            padding:0 1em 0 0;
+        }
+        .column {
+            display: inline-block;
+            width: 8em;
+            padding:0 1em 0 0;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+
+<div class="main-wrapper">
+<h1>VLSM Calculator</h1>
+
+<div style="width: 100%; padding-bottom: 16px;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- subnetting-header-responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5214460626967121"
+     data-ad-slot="4650969699"
+     data-ad-format="horizontal"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<form onsubmit="return false;">
+    How many subnets do you need to create?<br>
+    <input type='number' id='input_num_of_subnets' min='2' max='999' maxlength="3" placeholder='Subnets'>
+    <button onClick="change_subnet_number();">Change</button><span id='nets' style="display:none;">4</span>
+</form>
+<form onsubmit="return false;">
+    <p>Enter your IP in doted decimal notation (Like. 192.168.1.0/24)? = 
+    <input type='text' id='input_network'><span id='not_valid_ip' style="background-color: yellow;"></span></p>
+    
+    <p id='subnet_pargraph'>
+    <span class='column'>Number of Lan:</span> <span class='column'>Number of hosts:</span><br>
+    <input type='text' id='name1' value='Lan1'>
+    <input type='text' id='hosts1' placeholder='Host Number' tabindex='1'><br>
+    <input type='text' id='name2' value='Lan2'>
+    <input type='text' id='hosts2' placeholder='Host Number' tabindex='2'><br>
+    <input type='text' id='name3' value='Lan3'>
+    <input type='text' id='hosts3' placeholder='Host Number' tabindex='3'><br>
+    <input type='text' id='name4' value='Lan4'>
+    <input type='text' id='hosts4' placeholder='Host Number' tabindex='4'><br>
+    </p>
+
+    <button class="Submit" onClick="vlsm();">Submit</button>
+    <button class="Clear" onClick="clear_form();">Clear</button>
+</form>
+<p id='ans'></p>
+Using VLSM/CIDR
+
+<div style="float: left; padding-right: 10px;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- large rect -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5214460626967121"
+     data-ad-slot="8794867296"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+
+
+<div style="width: 100%;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive link -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5214460626967121"
+     data-ad-slot="1710849691"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+
+<script type="text/javascript" src="vlsm.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50427363-2', 'subnettingpractice.com');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+</div>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+ body{
+        background: grey;
+        }
+.main-wrapper{
+        margin: 0px auto;
+        width: 80%;
+        background: #ffffff;
+        padding: 30px;
+        box-shadow: 3px 13px 17px 1px;
+    }
+        h1{
+        text-align: center;
+         }
+.Submit{
+    padding:5px 10px;
+}
+.Submit:hover{
+    padding:5px 15px;
+    background:#F5B041;
+
+}
+.Clear{
+    padding:5px 15px;
+}
+.Clear:hover{
+    padding:5px 20px;
+    background: #F4D03F;
+}
